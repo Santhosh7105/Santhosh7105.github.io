@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Santhosh S — Electronics and Communication Engineering student focused on PCB Design, Embedded Systems, hardware prototyping and PCB fabrication.">
+  <meta name="theme-color" content="#06141d">
+  <meta property="og:title" content="Santhosh S | PCB Design & Embedded Systems">
+  <meta property="og:description" content="PCB Design, Embedded Systems and practical electronics hardware portfolio.">
+  <title>Santhosh S | PCB Design & Embedded Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"><span class="cursor-cross x"></span><span class="cursor-cross y"></span><span class="cursor-dot"></span><span class="cursor-ring"></span><span class="cursor-label"></span></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Santhosh S home">Santhosh S</a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <svg class="pcb-bg" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <linearGradient id="traceGrad" x1="0" x2="1"><stop offset="0" stop-color="#31e6ba" stop-opacity=".08"/><stop offset=".5" stop-color="#31e6ba" stop-opacity=".28"/><stop offset="1" stop-color="#31e6ba" stop-opacity=".08"/></linearGradient>
+        </defs>
+        <g class="pcb-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 115 H180 V210 H360 V300 H520"/><path d="M0 520 H240 V450 H390 V350 H650"/>
+          <path d="M1600 160 H1400 V250 H1250 V340 H1070"/><path d="M1600 610 H1390 V530 H1210 V440 H980"/>
+          <path d="M250 0 V120 H330 V200 H470"/><path d="M1220 0 V100 H1140 V180 H1030"/>
+          <path d="M470 900 V760 H570 V680 H720"/><path d="M1110 900 V790 H1010 V700 H860"/>
+          <path d="M30 745 H190 V670 H330 V590"/><path d="M1570 760 H1430 V690 H1300 V580"/>
+          <path d="M720 90 H820 V170 H900 V255 H1030"/><path d="M580 810 H690 V735 H820 V650 H920"/>
+        </g>
+        <g class="pcb-traces fine" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M80 260 H210 V330 H290"/><path d="M1520 300 H1370 V370 H1290"/><path d="M80 640 H300 V720 H420"/><path d="M1510 520 H1350 V450 H1240"/>
+          <path d="M360 70 V150 H430 V190"/><path d="M1260 720 V650 H1180 V600"/><path d="M760 0 V80 H700 V130"/><path d="M850 900 V820 H930 V770"/>
+        </g>
+        <g class="pcb-nodes">
+          <circle cx="180" cy="115" r="5"/><circle cx="360" cy="210" r="5"/><circle cx="520" cy="300" r="5"/><circle cx="240" cy="520" r="5"/>
+          <circle cx="1400" cy="160" r="5"/><circle cx="1250" cy="250" r="5"/><circle cx="1070" cy="340" r="5"/><circle cx="1390" cy="610" r="5"/>
+          <circle cx="570" cy="680" r="5"/><circle cx="1010" cy="790" r="5"/><circle cx="330" cy="590" r="5"/><circle cx="1300" cy="580" r="5"/>
+          <circle cx="820" cy="170" r="5"/><circle cx="900" cy="255" r="5"/>
+        </g>
+        <g class="pcb-pulses" filter="url(#glow)">
+          <circle r="4" class="pulse p1"><animateMotion dur="5s" repeatCount="indefinite" path="M0 115 H180 V210 H360 V300 H520"/></circle>
+          <circle r="4" class="pulse p2"><animateMotion dur="6.5s" begin="1.2s" repeatCount="indefinite" path="M1600 610 H1390 V530 H1210 V440 H980"/></circle>
+          <circle r="4" class="pulse p3"><animateMotion dur="7s" begin="2s" repeatCount="indefinite" path="M470 900 V760 H570 V680 H720"/></circle>
+          <circle r="4" class="pulse p4"><animateMotion dur="5.8s" begin=".5s" repeatCount="indefinite" path="M720 90 H820 V170 H900 V255 H1030"/></circle>
+        </g>
+        <g class="pcb-labels"><text x="80" y="105">J1 INPUT</text><text x="1340" y="150">U1</text><text x="1110" y="330">TP1</text><text x="280" y="565">R1</text><text x="1270" y="570">C2</text><text x="820" y="65">3V3</text><text x="920" y="840">GND</text></g>
+      </svg>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> PCB DESIGN • EMBEDDED SYSTEMS • HARDWARE</p>
+          <h1>Hi, I'm<br><strong>Santhosh S</strong><em>.</em></h1>
+          <h2>PCB Design &amp; Embedded Systems</h2>
+          <p class="hero-lead">B.E. Electronics and Communication Engineering student focused on PCB design, hardware prototyping, embedded systems and practical electronics development.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#projects" data-cursor="OPEN">Explore Projects <span>↗</span></a>
+            <a class="btn btn-ghost magnetic" href="assets/Santhosh_S_Resume.pdf" download data-cursor="PDF">Download Resume <span>↓</span></a>
+          </div>
+          <div class="hero-status"><span><i></i> PCB Design</span><span><i></i> Hardware</span><span><i></i> Embedded</span></div>
+        </div>
+
+        <div class="hero-profile reveal" data-cursor="PROFILE">
+          <div class="profile-tech top"><span>NODE_01</span><span>ECE / HW</span></div>
+          <div class="profile-frame">
+            <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+            <img src="assets/profile.jpg" alt="Santhosh S professional portrait">
+            <div class="profile-caption"><strong>SANTHOSH S</strong><span>ECE • PCB &amp; EMBEDDED</span></div>
+          </div>
+          <div class="profile-tech bottom"><span>STATUS: LEARNING</span><span>2023—2027</span></div>
+        </div>
+      </div>
+      <div class="scroll-indicator"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow"><span></span> 01 / ABOUT</p><h2>Building electronics from idea to working hardware.</h2></div>
+        <div class="about-grid">
+          <div class="about-copy reveal"><p>I'm a B.E. Electronics and Communication Engineering student at <strong>Coimbatore Institute of Engineering and Technology</strong>, focused on practical electronics development.</p><p>My hands-on work covers schematic design, PCB layout, PCB fabrication, soldering, hardware integration, testing and troubleshooting. I enjoy taking an electronic idea through the complete journey to a working prototype.</p><div class="quote-line">“Design the circuit. Build the board. Test the hardware.”</div></div>
+          <div class="edu-card reveal"><div class="card-kicker">EDUCATION / 01</div><h3>B.E. Electronics &amp; Communication Engineering</h3><p>Coimbatore Institute of Engineering and Technology, Coimbatore</p><div class="edu-row"><span>2023 — 2027</span><strong>CGPA 7.08 / 10</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="skills">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow"><span></span> 02 / TECHNICAL SKILLS</p><h2>Tools I use to turn circuits into hardware.</h2></div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><div class="skill-index">01</div><div class="skill-symbol">PCB</div><h3>PCB Design</h3><p>Designing schematics and board layouts for practical electronics prototypes.</p><div class="tags"><span>KiCad</span><span>Schematic Design</span><span>PCB Layout</span><span>Gerber</span></div></article>
+          <article class="skill-card reveal"><div class="skill-index">02</div><div class="skill-symbol">FAB</div><h3>PCB Fabrication</h3><p>Hands-on workflow from fabrication files to CNC milling, soldering and testing.</p><div class="tags"><span>FlatCAM</span><span>LinuxCNC</span><span>CNC Milling</span><span>Soldering</span></div></article>
+          <article class="skill-card reveal"><div class="skill-index">03</div><div class="skill-symbol">MCU</div><h3>Embedded Systems</h3><p>Practical prototyping with microcontrollers, sensors, displays and control hardware.</p><div class="tags"><span>ESP32</span><span>Arduino Uno</span><span>IoT Fundamentals</span><span>Hardware</span></div></article>
+          <article class="skill-card reveal"><div class="skill-index">04</div><div class="skill-symbol">3D</div><h3>CAD &amp; Prototyping</h3><p>Creating enclosure concepts and integrating PCB assemblies into physical prototypes.</p><div class="tags"><span>Fusion 360</span><span>3D Modeling</span><span>Enclosure Design</span><span>Troubleshooting</span></div></article>
+        </div>
+        <div class="skill-foot reveal"><span>C / C++</span><span>Hardware Testing</span><span>Prototype Development</span><span>Problem Solving</span></div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="projects">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow"><span></span> 03 / SELECTED PROJECTS</p><h2>From schematic to fabricated prototype.</h2></div>
+        <article class="featured-project reveal">
+          <div class="project-copy"><div class="project-id">PROJECT 01 / FEATURED</div><h3>IoT-Based Smart Irrigation System Using ESP32</h3><p>Developed an IoT-based Smart Irrigation System with automatic and manual control for efficient plant watering. The system monitors soil moisture, temperature and humidity through an OLED display and mobile dashboard.</p><p class="project-contrib"><strong>My hands-on contribution:</strong> complete PCB design in KiCad, CNC PCB fabrication, soldering, assembly, testing, troubleshooting and a customized 3D enclosure using Autodesk Fusion 360.</p><div class="project-tags"><span>ESP32</span><span>KiCad</span><span>OLED</span><span>IoT</span><span>PCB Fabrication</span><span>Fusion 360</span></div></div>
+          <button class="image-button" data-lightbox="assets/irrigation-working.jpg" data-title="Working Smart Irrigation Prototype" data-cursor="VIEW"><img src="assets/irrigation-working.jpg" alt="Working Smart Irrigation prototype"><span>WORKING PROTOTYPE ↗</span></button>
+        </article>
+        <div class="gallery-grid">
+          <button class="gallery-card reveal" data-lightbox="assets/irrigation-3d.png" data-title="3D PCB Design" data-cursor="VIEW"><img src="assets/irrigation-3d.png" alt="3D render of Smart Irrigation PCB"><span><b>03D / 3D PCB DESIGN</b><small>Component placement &amp; enclosure-ready view</small></span></button>
+          <button class="gallery-card reveal" data-lightbox="assets/irrigation-pcb.png" data-title="KiCad PCB Layout" data-cursor="VIEW"><img src="assets/irrigation-pcb.png" alt="KiCad PCB layout"><span><b>PCB / LAYOUT</b><small>Routing and board layout in KiCad</small></span></button>
+          <button class="gallery-card reveal" data-lightbox="assets/irrigation-schematic.jpg" data-title="System Schematic" data-cursor="VIEW"><img src="assets/irrigation-schematic.jpg" alt="Smart Irrigation system schematic"><span><b>SCH / SCHEMATIC</b><small>Controller, sensors, power &amp; pump control</small></span></button>
+        </div>
+
+        <div class="process reveal"><div class="process-title"><span>PCB WORKFLOW</span><small>01 → 08</small></div><div class="process-track"><div>01<strong>SCHEMATIC</strong></div><i></i><div>02<strong>PCB LAYOUT</strong></div><i></i><div>03<strong>3D CHECK</strong></div><i></i><div>04<strong>GERBER</strong></div><i></i><div>05<strong>FLATCAM</strong></div><i></i><div>06<strong>CNC MILL</strong></div><i></i><div>07<strong>SOLDER</strong></div><i></i><div>08<strong>TEST</strong></div></div></div>
+
+        <article class="secondary-project reveal"><div><div class="project-id">PROJECT 02 / ONGOING</div><h3>AI-Powered PCB Inspection &amp; Automated Defect Segregation</h3><p>Developing an AI-based PCB inspection system using YOLO for automated image-based PCB defect detection. The planned system targets missing/incorrect components, component placement issues, soldering defects and PCB trace/track defects.</p><div class="project-tags"><span>YOLO</span><span>Computer Vision</span><span>Raspberry Pi</span><span>PCB Inspection</span></div></div><div class="status-box"><span class="status-dot"></span><b>ONGOING</b><small>Edge processing planned with Raspberry Pi</small></div></article>
+      </div>
+    </section>
+
+    <section class="section resume-section">
+      <div class="container resume-card reveal"><div><p class="eyebrow"><span></span> OPEN TO OPPORTUNITIES</p><h2>Looking for a core electronics internship.</h2><p>Interested in internship opportunities related to PCB Design, Embedded Systems and Electronics Hardware.</p></div><a class="btn btn-primary magnetic" href="assets/Santhosh_S_Resume.pdf" download data-cursor="PDF">Download Resume <span>↓</span></a></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid"><div class="reveal"><p class="eyebrow"><span></span> 04 / CONTACT</p><h2>Let's build something.</h2><p>For internship opportunities, hardware projects or electronics development discussions, feel free to reach out.</p></div><div class="contact-list reveal"><a href="mailto:santhosh.workmails@gmail.com" data-cursor="MAIL"><span>EMAIL</span>santhosh.workmails@gmail.com ↗</a><a href="tel:+916379730301" data-cursor="CALL"><span>PHONE</span>+91 6379730301 ↗</a><a href="https://www.linkedin.com/in/santhosh-electronics" target="_blank" rel="noopener" data-cursor="LINK"><span>LINKEDIN</span>linkedin.com/in/santhosh-electronics ↗</a><a href="https://github.com/Santhosh7105" target="_blank" rel="noopener" data-cursor="LINK"><span>GITHUB</span>github.com/Santhosh7105 ↗</a></div></div>
+    </section>
+  </main>
+
+  <footer><div class="container"><strong>Santhosh S</strong><span>PCB Design • Embedded Systems • Hardware</span><small>© 2026 Santhosh S. All rights reserved.</small></div></footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close image">×</button><figure><img id="lightbox-img" src="" alt=""><figcaption id="lightbox-title"></figcaption></figure></div>
+  <script src="script.js"></script>
+</body>
+</html>
